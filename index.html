@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人信息卡片</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>个人信息卡片</h1>
+    <div class="card">
+        <div class="avatar-container">
+            <img id="avatar" src="default-avatar.png" alt="头像">
+            <input type="file" id="avatarInput" accept="image/*">
+        </div>
+        <div class="info">
+            <label>
+                姓名：
+                <input type="text" id="nameInput" placeholder="请输入姓名">
+            </label>
+            <label>
+                个人简介：
+                <textarea id="bioInput" placeholder="请输入个人简介"></textarea>
+            </label>
+        </div>
+        <button id="saveBtn">保存</button>
+
+        <div class="display">
+            <h2 id="displayName"></h2>
+            <p id="displayBio"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
